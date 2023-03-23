@@ -132,6 +132,7 @@ label input{
     border-radius: 10px;
     outline:none;
     font-size: 14pt;
+    color: white;
 }
 
 label input:hover{
