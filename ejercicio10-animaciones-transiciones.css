@@ -1,0 +1,28 @@
+body{
+    padding: 0;
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.btn-modern{
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color:darkorchid;
+    color: white;
+    border-bottom: 2px solid blueviolet;
+    cursor:pointer;
+    transition: background-color 150ms;
+}
+
+.btn-modern:hover{
+    transform: translateY(-5%);
+    box-shadow: 10px 10px thistle;
+    background-color: purple;
+    color: yellow;
+    transition: background-color color 0.4s;
+}
