@@ -16,7 +16,7 @@ body{
     color: white;
     border-bottom: 2px solid blueviolet;
     cursor:pointer;
-    transition: background-color 150ms;
+    transition: all 0.4s ease;
 }
 
 .btn-modern:hover{
@@ -24,5 +24,4 @@ body{
     box-shadow: 10px 10px thistle;
     background-color: purple;
     color: yellow;
-    transition: background-color color 0.4s;
 }
