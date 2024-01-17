@@ -1,0 +1,133 @@
+/*texto.css*/
+
+aside p:nth-of-type(1) {
+    text-transform: uppercase;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+aside p:nth-of-type(2) {
+    text-transform: lowercase;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+aside p:nth-of-type(3) {
+    text-transform: capitalize;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+aside p:nth-of-type(4) {
+    font-variant: small-caps;
+    text-align: justify;
+    text-indent: 1em;
+    font-size: 2em;
+}
+
+h1 {
+    color: hotpink;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, monospace;
+    /*Monospace (no es obligatorio añadirlo) es la tipografía de consolas, cuando se pone un code por ejemplo,
+    la tipografía que se usa es monospace.*/
+    font-size: 4em;
+    font-weight: normal;
+    border-bottom: 2px mediumslateblue dashed;
+    text-align: center;
+    word-spacing: 0.1em;
+}
+
+section {
+    color: plum;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    /*line-height: 2em; es para el interlineado pero no es muy usada*/
+}
+
+code {
+    font-weight: bold;
+    color: blueviolet;
+    background-color: rgb(219, 189, 247);
+    letter-spacing: 0.5em;
+
+}
+
+strong {
+    color: blueviolet;
+    font-weight: normal;
+    text-decoration: underline;
+    text-decoration-color: rgb(157, 5, 187);
+    text-decoration-thickness: 1.5px;
+    text-decoration-style: wavy;
+}
+
+h2 {
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 0.5em;
+}
+
+em {
+    font-style: normal;
+    color: white;
+    background-color: rgb(219, 189, 247);
+}
+
+blockquote {
+    font-style: italic;
+    color: white;
+    background-color: rgb(228, 208, 247);
+    font-variant: small-caps;
+    text-decoration: underline 1.5px wavy rgb(197, 103, 189);
+}
+
+a{
+    text-decoration: none;
+    color:darkmagenta;
+    /*También podría ser underline, overline,line-through...*/
+}
+
+/*:after, :before, content y attr()*/
+
+/*header p::before{ /*Cuando hay un párrafo pone eso delante.
+    content: "Esto es un párrafo ->";
+    color:cornflowerblue;
+    font-weight: bold;
+    background-color: rgb(223, 232, 245);
+}*/
+
+/*header p::after{ /*Cuando hay un párrafo pone eso detrás(al final).
+    content: "<- Aquí termina el párrafo";
+    color:cornflowerblue;
+    font-weight: bold;
+    background-color: rgb(223, 232, 245);
+}*/
+
+/*header h2:before{
+    content: "Capítulo de ";
+    color: cornflowerblue;
+}
+
+header a::after{ /*Se muestra el valor del href
+    content: " ("  attr(href)")";
+}
+
+header abbr::after{
+    content: "("attr(title)")";
+    color:cornflowerblue
+}*/
+
+/*Contadores. ESTO SIEMPRE ENTRA EN EXAMEN!!!*/
+header{
+    counter-reset: numpar; /*numpar = número de párrafos*/
+}
+header p {
+    counter-increment: numpar;
+}
+header p :nth-last-of-type(odd)::before{
+    content: "("counter(numpar)")";
+}
+
+header::after {
+    content: "Total: " counter(numpar);
+}

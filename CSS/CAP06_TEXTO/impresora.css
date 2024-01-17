@@ -1,0 +1,27 @@
+header p::before{ /*Cuando hay un párrafo pone eso delante.*/
+    content: "Esto es un párrafo ->";
+    color:cornflowerblue;
+    font-weight: bold;
+    background-color: rgb(223, 232, 245);
+}
+
+header p::after{ /*Cuando hay un párrafo pone eso detrás(al final).*/
+    content: "<- Aquí termina el párrafo";
+    color:cornflowerblue;
+    font-weight: bold;
+    background-color: rgb(223, 232, 245);
+}
+
+header h2:before{
+    content: "Capítulo de ";
+    color: cornflowerblue;
+}
+
+header a::after{ /*Se muestra el valor del href*/
+    content: " ("  attr(href)")";
+}
+
+header abbr::after{
+    content: "("attr(title)")";
+    color:cornflowerblue
+}

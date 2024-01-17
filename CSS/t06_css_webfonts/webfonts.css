@@ -1,0 +1,36 @@
+/* webfonts.css */
+
+/* la fuente de Google se usa "directamente": 
+está importada en el HTML con   
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+*/
+.googlefonts {
+  font-family: 'Pangolin', cursive;
+}
+
+/* definición de una fuente en fichero */
+@font-face {
+  font-family: nuevaFuente;
+  src: url("mona_shark/Mona Shark.otf");
+}
+
+/* uso de la fuente "nuevaFuente" (de fichero) */
+.comic {
+  font-family: nuevaFuente, Arial, Helvetica, sans-serif;
+}
+
+
+/* Código auxiliar */
+pre {
+  color: blue;
+  margin-left: 10px;
+}
+pre strong {
+  background-color: yellow;;
+}
+
+section {
+  border: 1px rebeccapurple dashed;
+  margin: 1em;
+  font-family: 'Amatic SC', sans-serif;
+}

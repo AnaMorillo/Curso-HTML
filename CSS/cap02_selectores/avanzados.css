@@ -1,0 +1,16 @@
+/* selector hijo*/
+footer> p{
+    color:brown;
+}
+
+/* selector adyacente (hermanos)*/
+h2 + p{
+    font-weight: bold;
+    color: aquamarine;
+}
+
+/* selector sibling
+al mismo nivel y precedido del h2*/
+h2 ~ blockquote{
+    border: 2px solid blue;
+}

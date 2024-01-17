@@ -1,0 +1,19 @@
+h1{
+    margin: 1in;
+}
+
+p{
+    font-size: 12pt;
+}
+
+section{
+    width: 70%; /*Para un ancho fijo se pone en pixel y el % se pone para que se adapte al tamaño de la pantalla*/
+}
+
+section p {
+    font-size: 16px;
+}
+
+section p strong{
+    font-size: 2em;
+}

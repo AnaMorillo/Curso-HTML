@@ -1,0 +1,41 @@
+/*Colores.css*/
+
+h1{
+    color:white;
+    background-color: turquoise;
+}
+
+ul li:nth-child(1){
+    color:#FF0000;
+}
+
+ul li:nth-child(2){
+    color:#00FF00;
+}
+
+ul li:nth-child(3){
+    color: rgb(0%,0%,100%);
+}
+
+ul li:nth-child(4){
+    color: #0000FF;
+}
+
+ul li:nth-child(5){
+    color:brown;
+
+}
+
+ul li:nth-child(6){ /*opacity normalmente se pone por separado pero también se puede incluir en el propio color como en los ejemplos de a abajo*/
+    color:brown;
+    opacity:0.5;
+}
+
+
+ul li:nth-child(7){
+    color:#ff00007e;
+}
+
+ul li:nth-child(8){
+    color: rgba(100%,0%,0%,15%);
+}

@@ -1,0 +1,56 @@
+/* vertical-align */
+
+/* en imágenes */
+article img {
+    vertical-align: middle; /* probar middle, top, baseline (por defecto) */
+}
+
+/* en texto inline */
+article span.sub {
+    vertical-align: sub; /*Así aparece alineada hacia abajo. Se puede usar tb %, por ejemplo 200%, px o em*/
+    font-size: 70%;
+    background-color: lightcyan;
+}
+
+article span.super {
+    vertical-align: super; /*Así aparece alineada hacia arriba*/
+    font-size: 70%;
+    background-color: rgb(255, 206, 239);
+}
+
+/* en tablas para el contenido de las celdas */
+article td {
+    vertical-align: middle;  /* probar bottom, top o middle (default) */
+    text-align: center;
+}
+
+/* decorativo para ver el box */
+aside p {
+    border: 1px solid red;
+}
+
+/* uso whitespace */
+aside p:nth-of-type(1) {
+    white-space: normal;
+    text-align: justify;
+}
+
+aside p:nth-of-type(2) {
+    white-space: pre;
+    text-align: justify;
+}
+
+aside p:nth-of-type(3) {
+    white-space: pre-line;
+    text-align: justify;
+}
+
+aside p:nth-of-type(4) {
+    white-space: pre-wrap;
+    text-align: justify;
+}
+
+aside p:nth-of-type(5) {
+    white-space: nowrap;
+    text-align: justify;
+}

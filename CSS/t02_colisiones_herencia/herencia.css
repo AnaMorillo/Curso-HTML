@@ -1,0 +1,10 @@
+/* file: herencia. css */
+
+section {
+  color: purple;           /* se hereda */
+  border: 2px solid lightpink; /* no se hereda */
+}
+section p {
+  color: deeppink;
+}
+

@@ -1,0 +1,18 @@
+/* atributos.css*/
+
+[title]{ /* funciona para todo los title*/
+    color: red;
+}
+[title="texto de architecto"]{ /*Solo funciona con el title que pone ese texto en concreto */
+    background-color: yellow;
+}
+[title*=dolor]{ /* sirve para cualquier title que contenga la palabra dolor*/
+    border: 2px solid blue;
+}
+
+[href$=".pdf"]{ /*Elementos href que terminen en .pdf*/
+    background-color: green;
+}
+[href^="https://"]{ /*Elementos href que empiecen por https://*/
+    background-color: blueviolet;
+}

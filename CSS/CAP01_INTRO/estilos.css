@@ -1,0 +1,14 @@
+/*
+así se hacen comentarios en CSS
+*/
+.novedad{
+    font-weight: bold;
+}
+h1{
+    color:deeppink;
+    background-color: rgb(253, 204, 212);
+    border-bottom: 2px greenyellow;
+}
+p{
+    color:deeppink;
+}

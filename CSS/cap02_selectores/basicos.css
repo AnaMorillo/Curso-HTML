@@ -1,0 +1,49 @@
+/* basicos */
+
+/* etiqueta*/
+h1,
+h2,
+h3 {
+    color: aqua;
+    border-bottom: 1px solid aqua;
+    background-color: blueviolet;
+}
+
+h1 {
+    text-align: center;
+}
+
+/*h2{
+    color: aqua;
+    border-bottom: 1px solid aqua;
+    background-color: blueviolet;
+}*/
+
+p {
+    color: aqua;
+    text-align: justify
+}
+
+/* Selector de clase*/
+.novedad {
+    background-color: rgb(192, 153, 255);
+}
+
+/*concatenar: AND*/
+strong.novedad {
+    border: 5px dotted rgb(0, 255, 157);
+}
+
+/* selector de id */
+#resumenFinal {
+    text-decoration: underline;
+}
+
+footer section p{
+    color: blueviolet;
+}
+
+/* selector universal */
+*{
+    font-style: italic;
+}

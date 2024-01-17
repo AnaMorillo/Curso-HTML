@@ -1,0 +1,27 @@
+/* modificar el selector section/ por article 
+  para ver la diferencia */
+section { 
+    counter-reset: np;
+}
+
+/* se incrementa y muestra en el mismo sitio */
+section p::before {
+    content: "(" counter(np) ") - "; 
+    counter-increment: np;
+}
+
+
+/* A continuación modificación para comprobar que hay
+ - lugar dónde se resetea el contador
+ - lugar dónde se incrementa
+ - lugar dónde se muestra
+ Para probarla comentar regla previa 
+  y descomentar la siguiente
+*/
+/* section p {
+    counter-increment: np;
+}
+section p:nth-of-type(odd)::before {
+    content: "(" counter(np) ") - ";
+
+} */
